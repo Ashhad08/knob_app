@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:knob_app/navigation/route_names.dart';
 
 import '../../../../../../configurations/app_assets.dart';
 import '../../../../../../configurations/app_colors.dart';
@@ -60,7 +61,12 @@ class SignUpViewBody extends StatelessWidget {
               const SizedBox(
                 height: 30,
               ),
-              CustomButton(buttonText: 'Sign Up', height: 70, onPressed: () {}),
+              CustomButton(
+                  buttonText: 'Sign Up',
+                  height: 70,
+                  onPressed: () {
+                    Navigator.pushNamed(context, RouteNames.nameViewRoute);
+                  }),
               const SizedBox(
                 height: 40,
               ),

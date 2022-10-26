@@ -9,7 +9,7 @@ class AuthTextField extends StatefulWidget {
     required this.hintText,
     this.prefixIcon,
     required this.isPasswordField,
-    // required this.controller,
+    //required this.controller,
     this.obscureText = false,
     this.validator,
   }) : super(key: key);
@@ -17,7 +17,7 @@ class AuthTextField extends StatefulWidget {
   final IconData? prefixIcon;
   final bool isPasswordField;
 
-  // final TextEditingController controller;
+  //final TextEditingController controller;
   final Function(String)? validator;
   bool obscureText;
 
@@ -35,7 +35,7 @@ class _AuthTextFieldState extends State<AuthTextField> {
       child: TextFormField(
         validator: (val) => widget.validator!(val!),
         obscureText: widget.obscureText,
-        // controller: widget.controller,
+        //  controller: widget.controller,
         style: GoogleFonts.raleway(
           color: AppColors.kSecondaryColor,
           fontWeight: FontWeight.w400,

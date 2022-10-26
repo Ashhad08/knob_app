@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:knob_app/configurations/app_theme.dart';
-import 'package:knob_app/navigation/route_names.dart';
-import 'package:knob_app/navigation/routes_generator.dart';
+
+import 'navigation/route_names.dart';
+import 'navigation/routes_generator.dart';
 
 void main() {
   runApp(const MyApp());

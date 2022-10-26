@@ -5,16 +5,16 @@ class TitleRichText extends StatelessWidget {
       {Key? key,
       required this.mediumText,
       required this.boldText,
-      this.alignment = MainAxisAlignment.start})
+      this.alignment = WrapAlignment.start})
       : super(key: key);
   final String mediumText;
   final String boldText;
-  final MainAxisAlignment alignment;
+  final WrapAlignment alignment;
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: alignment,
+    return Wrap(
+      runAlignment: alignment,
       children: [
         Text(mediumText, style: Theme.of(context).textTheme.headlineSmall),
         Text(boldText,

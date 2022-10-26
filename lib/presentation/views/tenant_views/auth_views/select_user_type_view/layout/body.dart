@@ -32,7 +32,7 @@ class _SelectUserTypeViewBodyState extends State<SelectUserTypeViewBody> {
               height: 24,
             ),
             const TitleRichText(
-              alignment: MainAxisAlignment.center,
+              alignment: WrapAlignment.center,
               mediumText: 'Ready to ',
               boldText: 'explore? 👋',
             ),
